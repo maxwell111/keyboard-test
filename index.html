@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keyboard test</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="container">
+      <div class="output" id="output">
+        <div class="output-area">
+          <h3 class="output-title">Your typed text:</span>
+          <div class="output-result"></div>
+        </div>
+        <div class="output-btn">
+          <button class="btn btn--primary btn--md" id="clear-output">Clear output</button>
+        </div>
+      </div>
+      <div class="keyboard keyboard-apple" id="keyboard1">
+        <div class="key key-esc" data-key-value="escape">
+          <p>esc</p>
+        </div>
+        <div class="key" data-key="F1">
+          <p>F1</p>
+        </div>
+        <div class="key" data-code="F2">
+          <p>F2</p>
+        </div>
+        <div class="key" data-code="F3">
+          <p>F3</p>
+        </div>
+        <div class="key" data-code="F4">
+          <p>F4</p>
+        </div>
+        <div class="key" data-code="F5">
+          <p>F5</p>
+        </div>
+        <div class="key" data-code="F6">
+          <p>F6</p>
+        </div>
+        <div class="key" data-code="F7">
+          <p>F7</p>
+        </div>
+        <div class="key" data-code="F8">
+          <p>F8</p>
+        </div>
+        <div class="key" data-code="F9">
+          <p>F9</p>
+        </div>
+        <div class="key" data-code="F10">
+          <p>F10</p>
+        </div>
+        <div class="key" data-code="F11">
+          <p>F11</p>
+        </div>
+        <div class="key" data-code="F12">
+          <p>F12</p>
+        </div>
+        <div class="key key-finger"></div>
+        <div class="key" data-code="Backquote">
+          <p>~<br>`</p>
+        </div>
+        <div class="key" data-code="Digit1">
+          <p>1</p>
+        </div>
+        <div class="key" data-code="Digit2">
+          <p>2</p>
+        </div>
+        <div class="key" data-code="Digit3">
+          <p>3</p>
+        </div>
+        <div class="key" data-code="Digit4">
+          <p>4</p>
+        </div>
+        <div class="key" data-code="Digit5">
+          <p>5</p>
+        </div>
+        <div class="key" data-code="Digit6">
+          <p>6</p>
+        </div>
+        <div class="key" data-code="Digit7">
+          <p>7</p>
+        </div>
+        <div class="key" data-code="Digit8">
+          <p>8</p>
+        </div>
+        <div class="key" data-code="Digit9">
+          <p>9</p>
+        </div>
+        <div class="key" data-code="Digit0">
+          <p>0</p>
+        </div>
+        <div class="key" data-code="Minus">
+          <p>_<br>-</p>=
+        </div>
+        <div class="key" data-code="Equal">
+          <p>+<br>=</p>
+        </div>
+        <div class="key key-delete" data-code="Backspace">
+          <p>delete</p>
+        </div>
+        <div class="key key-tab" data-code="Tab">
+          <p>tab</p>
+        </div>
+        <div class="key" data-code="KeyQ">
+          <p>Q</p>
+        </div>
+        <div class="key" data-code="KeyW">
+          <p>W</p>
+        </div>
+        <div class="key" data-code="KeyE">
+          <p>E</p>
+        </div>
+        <div class="key" data-code="KeyR">
+          <p>R</p>
+        </div>
+        <div class="key" data-code="KeyT">
+          <p>T</p>
+        </div>
+        <div class="key" data-code="KeyY">
+          <p>Y</p>
+        </div>
+        <div class="key" data-code="KeyU">
+          <p>U</p>
+        </div>
+        <div class="key" data-code="KeyI">
+          <p>I</p>
+        </div>
+        <div class="key" data-code="KeyO">
+          <p>O</p>
+        </div>
+        <div class="key" data-code="KeyP">
+          <p>P</p>
+        </div>
+        <div class="key" data-code="BracketLeft">
+          <p>{<br>[</p>
+        </div>
+        <div class="key" data-code="BracketRight">
+          <p>}<br>]</p>
+        </div>
+        <div class="key" data-code="Backslash">
+          <p>|<br>\</p>
+        </div>
+        <div class="key key-caps" data-code="CapsLock">
+          <p>caps lock</p>
+        </div>
+        <div class="key" data-code="KeyA">
+          <p>A</p>
+        </div>
+        <div class="key" data-code="KeyS">
+          <p>S</p>
+        </div>
+        <div class="key" data-code="KeyD">
+          <p>D</p>
+        </div>
+        <div class="key" data-code="KeyF">
+          <p>F</p>
+        </div>
+        <div class="key" data-code="KeyG">
+          <p>G</p>
+        </div>
+        <div class="key" data-code="KeyH">
+          <p>H</p>
+        </div>
+        <div class="key" data-code="KeyJ">
+          <p>J</p>
+        </div>
+        <div class="key" data-code="KeyK">
+          <p>K</p>
+        </div>
+        <div class="key" data-code="KeyL">
+          <p>L</p>
+        </div>
+        <div class="key" data-code="Semicolon">
+          <p>:<br>;</p>
+        </div>
+        <div class="key" data-code="Quote">
+          <p>"<br>'</p>
+        </div>
+        <div class="key key-enter" data-code="Enter">
+          <p><span></span>return</p>
+        </div>
+        <div class="key key-shift" data-code="ShiftLeft">
+          <p>shift</p>
+        </div>
+        <div class="key" data-code="KeyZ">
+          <p>Z</p>
+        </div>
+        <div class="key" data-code="KeyX">
+          <p>X</p>
+        </div>
+        <div class="key" data-code="KeyC">
+          <p>C</p>
+        </div>
+        <div class="key" data-code="KeyV">
+          <p>V</p>
+        </div>
+        <div class="key" data-code="KeyB">
+          <p>B</p>
+        </div>
+        <div class="key" data-code="KeyN">
+          <p>N</p>
+        </div>
+        <div class="key" data-code="KeyM">
+          <p>M</p>
+        </div>
+        <div class="key" data-code="Comma">
+          <p>&lt;<br>,</p>
+        </div>
+        <div class="key" data-code="Period">
+          <p>&gt;<br>.</p>
+        </div>
+        <div class="key" data-code="Slash">
+          <p>?<br>/</p>
+        </div>
+        <div class="key key-shift" data-code="ShiftRight">
+          <p>shift</p>
+        </div>
+        <div class="key">
+          <p>🌐<br>fn</p>
+        </div>
+        <div class="key" data-code="ControlLeft">
+          <p>⌃<br>control</p>
+        </div>
+        <div class="key" data-code="AltLeft">
+          <p>⌥<br>option</p>
+        </div>
+        <div class="key key-command" data-code="MetaLeft">
+          <p>⌘<br>command</p>
+        </div>
+        <div class="key key-space" data-code="Space"></div>
+        <div class="key key-command" data-code="MetaRight">
+          <p>⌘<br>command</p>
+        </div>
+        <div class="key" data-code="AltRight">
+          <p>⌥<br>option</p>
+        </div>
+        <div class="key key-left" data-code="ArrowLeft">
+          <p>&#9666;</p>
+        </div>
+        <div class="key-group">
+          <div class="key key-up" data-code="ArrowUp">
+            <p>&#9652;</p>
+          </div>
+          <div class="key key-down" data-code="ArrowDown">
+            <p>&#9662;</p>
+          </div>
+        </div>
+        <div class="key key-right" data-code="ArrowRight">
+          <p>&#9656;</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="exit-message"> 
+    <div class="exit-message-wrap">
+      <div class="container">
+        <div class="exit-message-content"> 
+          <h2>If you see this message, you are likely viewing this page from a mobile device or tablet. For the correct display of the page, please open this page on your computer with connected keyboard.</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

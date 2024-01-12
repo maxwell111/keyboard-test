@@ -1,0 +1,77 @@
+.key {
+    position: relative;
+    border: 1px solid var(--key-border-color);
+    color: var(--key-text-color);
+    display: inline-block;
+    height: 71px;
+    text-align: center;
+    vertical-align: top;
+    width: 71px;
+    margin: 3px 1px;
+    cursor: pointer;
+    &-active {
+        border: 1px solid var(--key-active-border-color);
+        background: var(--key-active-bg-color);
+        color: var(--key-active-text-color);
+    }
+    &-esc,
+    &-tab,
+    &-delete {
+        width: 111px;
+    }
+    &-caps,
+    &-enter {
+        width: 129px;
+    }
+    &-shift {
+        width: 167px;
+    }
+    &-space {
+        width: 367px;
+    }
+    &-command {
+        width: 96px;
+    }
+    &-up,
+    &-down {
+        height: 32.5px;
+    }
+    &-group {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        width: 71px;
+        height: 71px;
+        margin: 3px 1px;
+        .key {
+            &:first-child {
+                margin-top: 0px;
+            }
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+    * {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.keyboard {
+    display: none;
+    &-apple {
+        .key {
+            border-radius: var(--border-radius-base);
+        }
+    }
+    &.is-active {
+        display: block;
+    }
+}

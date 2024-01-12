@@ -1,0 +1,32 @@
+.btn {
+  position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    outline: none;
+    white-space: nowrap;
+    transition: 0.3s all;
+    padding: 12px 25px;
+    border: none;
+    min-height: 46px;
+    &:hover,
+    &:focus {
+        outline: none;
+        text-decoration: none;
+    }
+    &--primary {
+        background-color: var(--button--close-bg-color);
+        border-color: var(--button--close-border-color);
+        color: var(--button-text-color);
+        &:hover {
+            color: 000;
+            opacity: 0.8;
+        }
+    }
+    &--md {
+        @include respond-to("md") {
+            min-width: 140px;
+        }
+    }
+}

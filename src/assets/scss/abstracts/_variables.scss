@@ -1,0 +1,30 @@
+:root {
+    --primary-text-color: #fff;
+    --primary-bg-color: #000;
+    --primary-color: #ffed00;
+    --font-size-base: 16px;
+    --font-family-base: 'Oswald', sans-serif;
+    --border-radius-base: 5px;
+    --line-height-base: 1.5;
+    --image-max-width: 100%;
+
+    // Button
+    --button-text-color: #000;
+    --button--close-bg-color: #ffed00;
+    --button--close-border-color: #ffed00;
+
+    // Exit message
+    --exit-message-bg-color: #000;
+
+    // Keyboard
+    --key-text-color: #fff;
+    --key-border-color: #fff;
+    --key-active-text-color: #000;
+    --key-active-bg-color: #ffed00;
+    --key-active-border-color: #ffed00;
+
+    // Output
+    --output-result-border-color: #ffed00;
+    --output-text-color: #000;
+    --output-text-bg-color: #fff;
+}

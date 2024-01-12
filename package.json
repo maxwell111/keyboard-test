@@ -1,0 +1,35 @@
+{
+  "name": "keyboard-test",
+  "version": "0.0.1",
+  "description": "Web page for testing keyboard",
+  "author": "Olexander Kartashev <oleksandrkartashev@gmail.com>",
+  "email": "oleksandrkartashev@gmail.com",
+  "scripts": {
+    "dev": "webpack serve --open --hot --mode development",
+    "build": "webpack --mode production"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "autoprefixer": "^10.4.16",
+    "css-loader": "^6.8.1",
+    "eslint": "^8.9.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.6",
+    "postcss-loader": "^7.3.4",
+    "sass": "^1.69.7",
+    "sass-loader": "^13.3.3",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "dependencies": {
+    "@babel/core": "^7.17.5",
+    "babel-loader": "^8.2.3"
+  }
+}

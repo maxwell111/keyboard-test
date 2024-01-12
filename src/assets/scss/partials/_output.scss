@@ -1,0 +1,48 @@
+.output {
+    margin-bottom: 20px;
+    display: none;
+    @include respond-to("md") {
+        margin-bottom: 50px;
+    }
+    &.is-visible {
+        display: block;
+    }
+    &-title {
+        font-weight: 400;
+    }
+    &-result {
+        width: 100%;
+        margin-top: 10px;
+        display: block;
+        border: 1px solid var(--output-result-border-color);
+        min-height: 150px;
+        border-radius: 5px;
+        padding: 10px 15px;
+        @include respond-to("md") {
+            margin-top: 20px;
+        }
+        span {
+            padding: 5px;
+            background: var(--output-text-bg-color);
+            display: inline-block;
+            color: var(--output-text-color);
+            line-height: 1;
+            margin: 5px;
+            width: auto;
+        }
+    }
+    &-btn {
+        margin-top: 10px;
+        text-align: right;
+        @include respond-to("md") {
+            margin-top: 20px;
+        }
+        button {
+            cursor: pointer;
+            display: none;
+            &.is-active {
+                display: inline-block;
+            }
+        }
+    }
+}
