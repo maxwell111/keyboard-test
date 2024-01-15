@@ -13,6 +13,7 @@ const keyboardTest = {
       this.keyboard.classList.add("is-active");
 
       document.addEventListener("keydown", (event) => {
+        console.log(event);
         const key = event.code;
         const text = key === "Space" ? "Space" : event.key; // For space button we have empty key, so condition prevents empty output.
         if (key) {
@@ -52,7 +53,7 @@ const keyboardTest = {
   setKeyboardType() {
     const platform = navigator.userAgentData.platform.toLowerCase();
     this.keyboard = document.querySelector(
-      platform.includes("mac") ? "#keyboard1" : null
+      platform.includes("mac") ? "#keyboard1" : ( platform.includes("win") || platform.includes("linux") ) ? "#keyboard2" : null
     );
   },
   showExitMessage() {

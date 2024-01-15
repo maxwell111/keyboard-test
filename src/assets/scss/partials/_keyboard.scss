@@ -9,33 +9,41 @@
     width: 71px;
     margin: 3px 1px;
     cursor: pointer;
+
     &-active {
         border: 1px solid var(--key-active-border-color);
         background: var(--key-active-bg-color);
         color: var(--key-active-text-color);
     }
+
     &-esc,
     &-tab,
     &-delete {
         width: 111px;
     }
+
     &-caps,
     &-enter {
         width: 129px;
     }
+
     &-shift {
         width: 167px;
     }
+
     &-space {
         width: 367px;
     }
+
     &-command {
         width: 96px;
     }
+
     &-up,
     &-down {
         height: 32.5px;
     }
+
     &-group {
         display: inline-flex;
         flex-direction: column;
@@ -43,15 +51,18 @@
         width: 71px;
         height: 71px;
         margin: 3px 1px;
+
         .key {
             &:first-child {
-                margin-top: 0px;
+                margin-top: 0;
             }
+
             &:last-child {
-                margin-bottom: 0px;
+                margin-bottom: 0;
             }
         }
     }
+
     * {
         position: absolute;
         left: 0;
@@ -66,11 +77,81 @@
 
 .keyboard {
     display: none;
+
     &-apple {
         .key {
             border-radius: var(--border-radius-base);
         }
     }
+
+    &-win {
+        .key {
+            width: 65px;
+            height: 52px;
+
+            &-f,
+            &-pause,
+            &-prt-sc,
+            &-insert,
+            &-delete,
+            &-off {
+                width: 55px;
+                height: 32px;
+            }
+
+            &-esc {
+                height: 32px;
+            }
+
+            &-off {
+                width: 53px;
+                height: 32px;
+            }
+
+            &-tab,
+            &-backspace {
+                width: 105px;
+            }
+
+            &-caps,
+            &-enter {
+                width: 120px;
+            }
+
+            &-shift {
+                width: 156px;
+            }
+
+            &-space {
+                width: 389px;
+            }
+
+            &-command {
+                width: 96px;
+            }
+
+            &-up,
+            &-down {
+                height: 32.5px;
+            }
+
+            &-group {
+                width: 65px;
+                height: 52px;
+
+                .key {
+                    &:first-child {
+                        margin-top: 0;
+                    }
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
     &.is-active {
         display: block;
     }
