@@ -6,6 +6,8 @@ const keyboardTest = {
   exitMessageBlock: null,
   init() {
     this.setKeyboardType();
+    console.log(this.keyboard);
+    console.log(!!this.keyboard);
     if (this.keyboard) {
       this.outputBlock = document.getElementById("output");
       this.clearOutputButton = document.getElementById("clear-output");
@@ -13,7 +15,6 @@ const keyboardTest = {
       this.keyboard.classList.add("is-active");
 
       document.addEventListener("keydown", (event) => {
-        console.log(event);
         const key = event.code;
         const text = key === "Space" ? "Space" : event.key; // For space button we have empty key, so condition prevents empty output.
         if (key) {
