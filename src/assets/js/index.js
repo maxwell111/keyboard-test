@@ -6,9 +6,7 @@ const keyboardTest = {
   exitMessageBlock: null,
   init() {
     this.setKeyboardType();
-    console.log(this.keyboard);
-    console.log(!!this.keyboard);
-    if (this.keyboard) {
+    if (!!this.keyboard) {
       this.outputBlock = document.getElementById("output");
       this.clearOutputButton = document.getElementById("clear-output");
       this.outputBlock.classList.add("is-visible");
@@ -53,9 +51,10 @@ const keyboardTest = {
   },
   setKeyboardType() {
     const platform = navigator.userAgentData.platform.toLowerCase();
-    this.keyboard = document.querySelector(
-      platform.includes("mac") ? "#keyboard1" : ( platform.includes("win") || platform.includes("linux") ) ? "#keyboard2" : null
-    );
+    // this.keyboard = document.querySelector(
+    //   platform.includes("mac") ? "#keyboard1" : ( platform.includes("win") || platform.includes("linux") ) ? "#keyboard2" : null
+    // );
+    this.keyboard = null;
   },
   showExitMessage() {
     this.exitMessageBlock = document.querySelector(".exit-message");
