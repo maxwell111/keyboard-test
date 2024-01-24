@@ -50,11 +50,13 @@ const keyboardTest = {
     }
   },
   setKeyboardType() {
+    const isMobile = /Mobi/.test(window.navigator.userAgent); 
+    if (isMobile) { 
+      this.keyboard = null;
+      return;
+    }
     const platform = navigator.userAgentData.platform.toLowerCase();
-    // this.keyboard = document.querySelector(
-    //   platform.includes("mac") ? "#keyboard1" : ( platform.includes("win") || platform.includes("linux") ) ? "#keyboard2" : null
-    // );
-    this.keyboard = null;
+    this.keyboard = document.querySelector(platform.includes("mac") ? "#keyboard1" : "#keyboard2");
   },
   showExitMessage() {
     this.exitMessageBlock = document.querySelector(".exit-message");
